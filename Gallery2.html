@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min width */
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 250px; /* Increased height for larger images */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%; /* Set height to fill the container */
+            object-fit: cover; /* Maintain aspect ratio and cover the area */
+            display: block;
+            border-radius: 8px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>D & A Scrap Metals Gallery</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item"><img src="https://th.bing.com/th/id/OIP.TLLNQqAfAK1kuhEPFss6QgHaD6?rs=1&pid=ImgDetMain" alt="Image 1"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\Q5I8EVFU\IMG-20241027-WA0011[1].jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\RZ5DSXBV\IMG-20241027-WA0008[1].jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\PF3SR78H\IMG-20241027-WA0012[1].jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\73Y9OOHW\IMG-20241027-WA0020[1].jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\Q5I8EVFU\IMG-20241027-WA0023[1].jpg" alt="Image 6"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\RZ5DSXBV\IMG-20241024-WA0004[1].jpg" alt="Image 7"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\73Y9OOHW\IMG-20241024-WA0003[1].jpg" alt="Image 8"></div>
+            <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\Q5I8EVFU\IMG-20241027-WA0006[1].jpg" alt="Image 9"></div>
+	        <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\RZ5DSXBV\IMG-20241027-WA0013[1].jpg" alt="Image 9"></div>
+	        <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\PF3SR78H\IMG-20241027-WA0005[1].jpg" alt="Image 9"></div>
+	   	    <div class="gallery-item"><img src="C:\Users\Jayden\AppData\Local\Microsoft\Windows\INetCache\IE\73Y9OOHW\IMG-20241027-WA0017[1].jpg" alt="Image 9"></div>
+	   </section>
+    </main>
+</body>
+</html>
